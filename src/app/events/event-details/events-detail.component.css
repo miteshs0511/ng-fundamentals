@@ -1,0 +1,12 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eventImage{
+    height: 100px;
+}
+
+a{
+    cursor: pointer;
+}

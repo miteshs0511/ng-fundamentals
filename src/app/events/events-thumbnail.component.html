@@ -1,0 +1,12 @@
+<div [routerLink]="['/events',event.id]" class="well howerwell thumbnail">
+    <h2>{{event?.name | uppercase}} </h2>
+    <div>Date: {{event.date | date:'MM/dd/yyyy'}}</div>
+    <div>Time: {{event.time}}</div>
+    <div>Price: {{event.price | currency:'USD'}}</div>
+    <div>
+        <span>Location: {{event?.location?.address}} </span>
+        <span *ngIf="event?.location">{{event?.location?.city}},{{event?.location?.country}}</span>
+    </div>
+
+    <!-- <button class="btn btn-primary" (click)="handleClick()">Click Me!</button> -->
+</div>
